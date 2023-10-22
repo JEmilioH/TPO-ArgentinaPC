@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="icon" href="./Media/Icono.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <input type="checkbox" id="check">
+      <label id="menu-abrir" for="check" class="checkbtn">
+        <span id="menu-abrir">&#9776</span>
+        <span id="menu-cerrar">X</span>
+      </label>
+      <img src="./Media/icono.png" alt="Logo empresa" class="logo" />
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <Main>
+    <section id="mapa">
+      <div class="container">
+        <h2>CONTACTO</h2>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.6603588985618!2d-115.01789122419447!3d36.07738747246204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1697240502488!5m2!1ses-419!2sar"
+            width="1106" height="436" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container-contacto">
+        <div class="datos-contacto">
+          <h3>Contactanos</h3>
+          <span>Domicilio</span>
+          <br>
+          <p>Avenida Siempreviva 742 - Springfield</p>
+          <br>
+          <span>Teléfono</span>
+          <br>
+          <p>+549111234567</p>
+          <br>
+          <span>Horarios</span>
+          <p>Lunes a Sábados de 8:30hs a 12:30hs <br>
+            y de 17:30hs a 21:30hs</p>
+        </div>
+        <div class="formulario-contacto">
+          <h3>Escribinos</h3>
+          <form>
+              <label for="nombre">Tu Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre"><br>
+              <label for="provincia">Tu Provincia:</label><br>
+              <input type="text" id="provincia" name="provincia"><br>
+              <label for="ciudad">Tu Ciudad:</label><br>
+              <input type="text" id="ciudad" name="ciudad"><br>
+              <label for="mail">Tu Mail:</label><br>
+              <input type="email" id="mail" name="mail"><br>
+              <label for="telefono">Tu Teléfono:</label><br>
+              <input type="number" id="telefono" name="telefono"><br>
+              <label for="producto">Producto relacionado a tu consulta:</label><br>
+              <input type="text" id="producto" name="producto"><br>
+              <label for="consulta">Tu Consulta:</label><br>
+              <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea><br>
+            <input type="submit" name="enviar" id='enviar' value="Enviar consulta"/>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </Main>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="caja ayuda">
+        <a href="./faq.html">
+          <h5>AYUDA</h5>
+        </a>
+        <ul class="desplegable">
+          <li><a href="./faq.html"></a>Formas de Pago</li>
+          <li><a href="./faq.html"></a>Formas de Envíos</li>
+          <li><a href="./faq.html"></a>Politica de Devoluciones</li>
+          <li><a href="./faq.html"></a>Términos y Condiciones</li>
+        </ul>
+      </div>
+      <div class="caja faq">
+        <a href="./contacto.html">
+          <h5>INFO DE CONTACTO</h5>
+        </a>
+        <p>+549111234567</p>
+      </div>
+      <div class="caja domicilio">
+        <a href="./contacto.html">
+          <h5>¿DONDE ESTAMOS?</h5>
+        </a>
+        <p>Avenida Siempreviva 742</p>
+        <p>Springfield</p>
+      </div>
+      <div class="caja horario">
+        <a href="./contacto.html">
+          <h5>HORARIOS</h5>
+        </a>
+        <p>Lunes a Sábados</p>
+        <p>8:30hs a 12:30hs</p>
+        <p>17:30hs a 21:30hs</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>
+        <strong>&copy; 2023 ArgentinaPC</strong> - Todos los derechos
+        reservados
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
