@@ -256,50 +256,76 @@ nav {
 
 /* .......SECCION FOOTER.......*/
 
-#footer{
-  background-color: rgb(58, 50, 50);
+.contendedor {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+footer {
+  background-color: rgb(36, 182, 182);
+  padding: 80px 0 0 0;
+  margin-top: 50px;
 }
 
-#footer .footer-container {
+.footerdiv {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align:center;
-  align-content: space-around;
-  padding: 1em 0em 1em;
+  flex-wrap: wrap;
 }
 
-#footer .caja {
-  margin: 0.5em;
+.enlacesfooter {
+  width: 33.3333333%;
+  padding: 0 35px;
 }
 
-#footer .footer-container h5 {
-  margin: 1em;
+.enlacesfooter h3 {
+  font-size: 1.25em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 25px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
-#footer a {
-  font-weight: bold;
+.enlacesfooter ul li a {
+  font-size: 1.1em ;
   text-decoration: none;
-  color: rgb(240, 120, 72);
-  font-size: 2.5vw;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
 }
 
-#footer .desplegable {
-  font-size: 2vw;
-  color: rgb(192, 216, 216);
-  list-style: none;
-  line-height: 3vw;
+.enlacesfooter ul li {
+list-style-type: none;
 }
 
-#footer p {
-  font-size: 2vw;
-  color: rgb(192, 216, 216);
+.enlacesfooter ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
 }
 
-#footer .footer-copyright p {
+.redes a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(36, 36, 36);
+  margin: 0 10px 10px 0;
   text-align: center;
-  padding-bottom: 0.8em;
-  color: white;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  transition: all .5s ease;
+}
+
+.redes a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #34a0ca;
+}
+
+.derechos {
+  text-align: center;
+  color: #000000;
+  padding: 30px 0;
 }
 
 /* .......SECCION PRODUCTOS.HTML PRODUCTOS....... */
@@ -445,15 +471,18 @@ nav {
   margin-top: 1rem;
 }
 
+
+
 #contacto .container-contacto {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 50px;
+  text-align: center;
 }
 
 #contacto .datos-contacto {
-  width: 40%;
+  width: 33%;
   padding: 0px 20px;
   font-size: 20px;
 }
@@ -467,12 +496,39 @@ nav {
   padding-bottom: 25px;
 }
 
+
+#contacto .clima-container {
+  width: 33%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contacto select {
+  width: 100%;
+  padding: 2px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#contacto h4 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: rgb(216, 48, 24);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 #contacto .formulario-contacto {
-  width: 40%;
+  width: 33%;
   height: auto;
   padding-right: 20px;
   padding-left: 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 #contacto #nombre {
@@ -533,7 +589,55 @@ nav {
   cursor: pointer;
 }
 
+#contacto #error {
+  position: absolute;
+  text-align: center;
+  background-color: rgb(253, 252, 206);
+  opacity: 0.8;
+  height: auto;
+  width: 40%;
+  top:unset;
+  right: 10vw;
+  color: red;
+  margin-top: 10px;
+}
+
 /* .......SECCION FAQ.HTML....... */
+#animacion {
+  justify-items: center;
+  margin-left:45%;
+}
+
+.circulo {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background: rgb(216, 48, 24);
+  border-radius: 50%;
+  animation: mover 2s alternate infinite;
+}
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0);
+    background-color: rgb(216, 48, 24);
+  }
+
+  50%{
+    transform: translate(100%);
+    background-color: rgb(36, 182, 182);
+  }
+
+  100%{
+    transform: translate(100%);
+    background-color: rgb(240, 120, 72);
+  }
+}
+
+
+
 #faq {
   margin: 15px;
   padding: 30px;
@@ -634,13 +738,37 @@ nav {
   border: 1px solid black;
 }
 
+#contacto .clima-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* .......FOOTER.......*/
+.footerdiv {
+  text-align: center;
+}
+
+.enlacesfooter {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.derechos {
+  margin-left: 10px;
+  margin-right: 10px
+}
 
 }
 
 @media screen and (max-width: 768px) {
-  .nav ul {
-    display: none;
-  }
 
   #menu-cerrar {
     display: none;
@@ -718,24 +846,6 @@ nav {
   min-width: 80vw;
 }
 
-
-
-  #footer .footer-container {
-    flex-direction: column;
-  }
-
-  #footer .footer-container h5 {
-    font-size: 5vw;
-    margin: 0;
-  }
-
-  #footer ul{
-    display: none;
-  }
-
-  #footer .footer-container p {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 585px) {

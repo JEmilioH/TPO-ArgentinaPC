@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -59,24 +63,62 @@
           <p>Lunes a Sábados de 8:30hs a 12:30hs <br>
             y de 17:30hs a 21:30hs</p>
         </div>
+
+        <div class="clima-container">
+          <h3>Temperatura</h3>
+          <select name="ciudad" id="ciudad">
+            <option value="buenos aires">
+              Buenos Aires (Argentina)
+            </option>
+            <option value="santiago del estero">
+              Santiago del Estero (Argentina)
+            </option>
+            <option value="salta">
+              Salta (Argentina)
+            </option>
+            <option value="tucuman">
+              Tucumán (Argentina)
+            </option>
+            <option value="cordoba">
+              Córdoba (Argentina)
+            </option>
+          </select>
+          <h4 id="temp"> - </h4>
+        </div>
+
         <div class="formulario-contacto">
           <h3>Escribinos</h3>
-          <form>
-              <label for="nombre">Tu Nombre:</label><br>
-              <input type="text" id="nombre" name="nombre"><br>
-              <label for="provincia">Tu Provincia:</label><br>
-              <input type="text" id="provincia" name="provincia"><br>
-              <label for="ciudad">Tu Ciudad:</label><br>
-              <input type="text" id="ciudad" name="ciudad"><br>
-              <label for="mail">Tu Mail:</label><br>
-              <input type="email" id="mail" name="mail"><br>
-              <label for="telefono">Tu Teléfono:</label><br>
-              <input type="number" id="telefono" name="telefono"><br>
-              <label for="producto">Producto relacionado a tu consulta:</label><br>
-              <input type="text" id="producto" name="producto"><br>
-              <label for="consulta">Tu Consulta:</label><br>
-              <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea><br>
-            <input type="submit" name="enviar" id='enviar' value="Enviar consulta"/>
+          <form id="formulario">
+              <div id="grupo_nombre">
+                <label for="nombre">Tu Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+              </div>
+              <div id="grupo_provincia">
+                <label for="provincia">Tu Provincia:</label><br>
+                <input type="text" id="provincia" name="provincia"><br>
+              </div>
+              <div id="grupo_ciudad">
+                <label for="ciudad">Tu Ciudad:</label><br>
+                <input type="text" id="ciudad" name="ciudad"><br>
+              </div>
+              <div id="grupo_mail">
+                <label for="mail">Tu Mail:</label><br>
+                <input type="email" id="mail" name="mail"><br>
+              </div>
+              <div id="grupo_telefono">
+                <label for="telefono">Tu Teléfono:</label><br>
+                <input type="number" id="telefono" name="telefono"><br>
+              </div>
+              <div id="grupo_producto">
+                <label for="producto">Producto relacionado a tu consulta:</label><br>
+                <input type="text" id="producto" name="producto"><br>
+              </div>
+              <div id="grupo_consulta">
+                <label for="consulta">Tu Consulta:</label><br>
+                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea><br>
+              </div>
+              <input type="submit" name="enviar" id='enviar' value="Enviar consulta">
+              <div id="error"></div>
           </form>
         </div>
       </div>
@@ -86,47 +128,47 @@
   </Main>
 
   <footer id="footer">
-    <div class="footer-container">
-      <div class="caja ayuda">
-        <a href="./faq.html">
-          <h5>AYUDA</h5>
-        </a>
-        <ul class="desplegable">
-          <li><a href="./faq.html"></a>Formas de Pago</li>
-          <li><a href="./faq.html"></a>Formas de Envíos</li>
-          <li><a href="./faq.html"></a>Politica de Devoluciones</li>
-          <li><a href="./faq.html"></a>Términos y Condiciones</li>
-        </ul>
-      </div>
-      <div class="caja faq">
-        <a href="./contacto.html">
-          <h5>INFO DE CONTACTO</h5>
-        </a>
-        <p>+549111234567</p>
-      </div>
-      <div class="caja domicilio">
-        <a href="./contacto.html">
-          <h5>¿DONDE ESTAMOS?</h5>
-        </a>
-        <p>Avenida Siempreviva 742</p>
-        <p>Springfield</p>
-      </div>
-      <div class="caja horario">
-        <a href="./contacto.html">
-          <h5>HORARIOS</h5>
-        </a>
-        <p>Lunes a Sábados</p>
-        <p>8:30hs a 12:30hs</p>
-        <p>17:30hs a 21:30hs</p>
+    <div class="contenedor">
+      <div class="footerdiv">
+        <div class="enlacesfooter">
+          <h3>
+            Nuestros colaboradores
+          </h3>
+          <ul>
+            <li><a href="https://www.atp.gob.pa/" target="_blank">Intel Argentina</a></li>
+            <li><a href="https://pancanal.com/" target="_blank">GeForce</a></li>
+            <li><a href="https://www.copaair.com/es-gs/" target="_blank">Thermaltake</a></li>
+          </ul>
+        </div>
+        <div class="enlacesfooter">
+          <h3>
+            Quienes Somos
+          </h3>
+          <ul>
+              <li><a href="./contacto.html">Nosotros</a></li>
+              <li><a href="./faq.html">Preguntas frecuentes</a></li>
+              <li><a href="./faq.html">Politica de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="enlacesfooter">
+          <h3>
+            Seguinos en nuestras redes
+          </h3>
+          <div class="redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <p>
-        <strong>&copy; 2023 ArgentinaPC</strong> - Todos los derechos
-        reservados
-      </p>
+    <div class="derechos">
+      <p> &copy;2023 Argentina PC - Todos los derechos reservados</p>
     </div>
   </footer>
+
+  <script src="./js/app.js"></script>
 
 </body>
 
